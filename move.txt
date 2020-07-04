@@ -1,0 +1,10 @@
+void Start()
+    {
+        //vector3 :3차원 vector2 :2차원
+        //Translate:벡터값을 현재 위치에 더하는 함수
+        Vector3 vec = new Vector3(5, 0, 0); //벡터 값
+        transform.Translate(vec);
+
+       // int number = 4; //스칼라 : 순수한 값
+        
+    }
