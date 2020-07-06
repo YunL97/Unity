@@ -1,10 +1,35 @@
-void Start()
-    {
-        //vector3 :3ì°¨ì› vector2 :2ì°¨ì›
-        //Translate:ë²¡í„°ê°’ì„ í˜„ì¬ ìœ„ì¹˜ì— ë”í•˜ëŠ” í•¨ìˆ˜
-        Vector3 vec = new Vector3(5, 0, 0); //ë²¡í„° ê°’
-        transform.Translate(vec);
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-       // int number = 4; //ìŠ¤ì¹¼ë¼ : ìˆœìˆ˜í•œ ê°’
-        
+public class LifeCycle : MonoBehaviour
+{
+     void Start()
+    {
+        //¿ÀºêÁ§Æ® ¿òÁ÷ÀÌ±â
+        Vector3 vec = new Vector3(5, 0, 0); //¾ó¸¸Å­ ÀÌµ¿À» ÇÏ´À³Ä
+        transform.Translate(vec);
     }
+
+     void Update()
+    {
+        Vector3 vec = new Vector3(Input.GetAxis("Horizontal"),
+            Input.GetAxis("Vertical"), 0); //¾ó¸¸Å­ ÀÌµ¿À» ÇÏ´À³Ä
+        transform.Translate(vec);
+    }
+
+    /*
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.anyKeyDown)
+            Debug.Log("ÇÃ·¹ÀÌ¾î°¡ ¾Æ¹«Å°¸¦ ´­·¶½À´Ï´Ù");
+
+        if (Input.GetButton("Horizontal"))
+            Debug.Log("È¾ÀÌµ¿Áß..."+ Input.GetAxisRaw("Horizontal"));
+
+        if (Input.GetButton("Vertical"))
+            Debug.Log("Á¾ÀÌµ¿Áß..." + Input.GetAxisRaw("Vertical"));
+    */
+}
+
