@@ -4,18 +4,51 @@ using UnityEngine;
 
 public class LifeCycle : MonoBehaviour
 {
+    /*
      void Start()
     {
         //오브젝트 움직이기
         Vector3 vec = new Vector3(5, 0, 0); //얼만큼 이동을 하느냐
         transform.Translate(vec);
     }
+    */
+    Vector3 target = new Vector3(8, 1.5f, 0);
 
      void Update()
     {
+        /*
+        //1.MoveTowards  (현재위치, 목표위치, 속도) 속도 비례
+        transform.position =
+            Vector3.MoveTowards(transform.position
+                                , target, 0.11f);
+        */
+
+        /*
+        //2.SmoothDam (현재위치 , 목표위치, 참조속도, 속도) 속도 반비례
+        Vector3 velo = Vector3.zero;
+       
+        transform.position =
+            Vector3.SmoothDamp(transform.position,
+                            target, ref velo, 1f);
+        */
+
+        /*
+        //3.Lerp (선형 보간) (현재위치, 목표위치, 속도) 속도 비례
+        transform.position =
+            Vector3.Lerp(transform.position
+                        , target, 0.005f);
+        */
+
+        //4.SLerp (구면 선형 보간) 포물선 이동
+        transform.position =
+            Vector3.Slerp(transform.position
+                        , target, 0.05f);
+        /*
+        //상하좌우 이동
         Vector3 vec = new Vector3(Input.GetAxis("Horizontal"),
             Input.GetAxis("Vertical"), 0); //얼만큼 이동을 하느냐
         transform.Translate(vec);
+        */
     }
 
     /*
