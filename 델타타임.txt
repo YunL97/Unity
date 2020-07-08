@@ -1,0 +1,15 @@
+public class LifeCycle : MonoBehaviour
+{
+
+
+    void Update()
+    {
+        //Time.deltaTime :이전 프레임의 완료까지 걸린 시간 값은 프레임이 적으면 크고,많으면 작음
+        //컴퓨터 사양에따른 차이 없애기 위해 사용
+        Vector3 vec = new Vector3(
+            Input.GetAxisRaw("Horizontal") * Time.deltaTime,
+            Input.GetAxisRaw("Vertical") * Time.deltaTime);
+        transform.Translate(vec);
+    }
+}
+
