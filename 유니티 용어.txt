@@ -13,3 +13,18 @@ Rigidbody -> Is Kinematic : 외부 물리효과 무시
 Material -> Tiling : 텍스쳐 반복 타일 개수
 
 Material -> Emission : 텍스쳐 발광(밝기)조절
+
+Physics Material : 탄성과 마찰을 다루는 물리적인 재질
+
+Friction : 마찰력, 낮을수록 많이 미끄러짐
+	Combine :  다음 마찰력을 계산하는 방식 
+
+물체 필수 요소 :Mesh, Material, Collider, RigidBody
+
+
+c# Velocity :현재이동속도
+
+c# Rigid 관련 함수는 FixedUpdated에 작성하도록 권장된다
+
+c# AddForce(Vec) : Vec의 방향과 크기로 힘을 줌 , Mess의 무게의 영향을 받는다
+c# rigid.AddTorque: 회전력
