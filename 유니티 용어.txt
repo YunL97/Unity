@@ -19,6 +19,11 @@ Physics Material : 탄성과 마찰을 다루는 물리적인 재질
 Friction : 마찰력, 낮을수록 많이 미끄러짐
 	Combine :  다음 마찰력을 계산하는 방식 
 
+오브젝트의 재질접근은 MeshRenderer을 통해서 한다
+
+
+
+
 물체 필수 요소 :Mesh, Material, Collider, RigidBody
 
 
@@ -28,3 +33,36 @@ c# Rigid 관련 함수는 FixedUpdated에 작성하도록 권장된다
 
 c# AddForce(Vec) : Vec의 방향과 크기로 힘을 줌 , Mess의 무게의 영향을 받는다
 c# rigid.AddTorque: 회전력
+
+c#
+//실제 물리적인 충돌로 발생하는 이벤트
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Sphere")
+            mat.color = new Color(0, 0, 0);
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+
+    }
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.name == "Sphere")
+            mat.color = new Color(1, 0, 0);
+
+
+    }
+
+    //콜라이더 충돌로 발생하는 이벤트
+    private void OnTriggerEnter(Collider other)
+    {
+        
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        
+    }
