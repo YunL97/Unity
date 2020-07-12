@@ -49,7 +49,9 @@ c#
     {
         if (collision.gameObject.name == "Sphere")
             mat.color = new Color(1, 0, 0);
+//
 
+ UI ->Canvas : UI가 그려지는 도화지 욕활인 컴포넌트
 
     }
 
