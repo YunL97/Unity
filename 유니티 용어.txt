@@ -68,3 +68,8 @@ c#
     {
         
     }
+
+public void Jump()
+    {
+        rigid.AddForce(Vector3.up * 20, ForceMode.Impulse);
+    } //이렇게 해놓고 앵커 참조하면 버튼같은게 접근 가능
