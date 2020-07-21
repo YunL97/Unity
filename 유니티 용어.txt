@@ -1,41 +1,41 @@
-À¯´ÏÆ¼ ÇÁ·Î±×·¥
+ìœ ë‹ˆí‹° í”„ë¡œê·¸ëž¨
 
-RigidBody: ¹°¸®È¿°ú¸¦ ¹Þ±â À§ÇÑ ÄÄÆ÷³ÍÆ® °¡Áö°ÔµÇ¸é Áß·ÂÀÇ È¿°ú¸¦ ¹ÞÀ½
+RigidBody: ë¬¼ë¦¬íš¨ê³¼ë¥¼ ë°›ê¸° ìœ„í•œ ì»´í¬ë„ŒíŠ¸ ê°€ì§€ê²Œë˜ë©´ ì¤‘ë ¥ì˜ íš¨ê³¼ë¥¼ ë°›ìŒ
 
-Colider ->Collider : ¹°¸®È¿°ú¸¦ ¹Þ±â À§ÇÑ ÄÄÆ÷³ÍÆ®
+Colider ->Collider : ë¬¼ë¦¬íš¨ê³¼ë¥¼ ë°›ê¸° ìœ„í•œ ì»´í¬ë„ŒíŠ¸
 
-Rigidbody -> Mess : ¹«°Ô, ¼öÄ¡°¡ ³ôÀ»¼ö·Ï Ãæµ¹ÀÌ ¹«°Å¿öÁü
+Rigidbody -> Mess : ë¬´ê²Œ, ìˆ˜ì¹˜ê°€ ë†’ì„ìˆ˜ë¡ ì¶©ëŒì´ ë¬´ê±°ì›Œì§
 
-Rigidbody -> Is Kinematic : ¿ÜºÎ ¹°¸®È¿°ú ¹«½Ã
+Rigidbody -> Is Kinematic : ì™¸ë¶€ ë¬¼ë¦¬íš¨ê³¼ ë¬´ì‹œ
 
-ÀçÁú ÆíÁýÀº »õ·Î »ý¼ºÇØ¾ß °¡´É
+ìž¬ì§ˆ íŽ¸ì§‘ì€ ìƒˆë¡œ ìƒì„±í•´ì•¼ ê°€ëŠ¥
 
-Material -> Tiling : ÅØ½ºÃÄ ¹Ýº¹ Å¸ÀÏ °³¼ö
+Material -> Tiling : í…ìŠ¤ì³ ë°˜ë³µ íƒ€ì¼ ê°œìˆ˜
 
-Material -> Emission : ÅØ½ºÃÄ ¹ß±¤(¹à±â)Á¶Àý
+Material -> Emission : í…ìŠ¤ì³ ë°œê´‘(ë°ê¸°)ì¡°ì ˆ
 
-Physics Material : Åº¼º°ú ¸¶ÂûÀ» ´Ù·ç´Â ¹°¸®ÀûÀÎ ÀçÁú
+Physics Material : íƒ„ì„±ê³¼ ë§ˆì°°ì„ ë‹¤ë£¨ëŠ” ë¬¼ë¦¬ì ì¸ ìž¬ì§ˆ
 
-Friction : ¸¶Âû·Â, ³·À»¼ö·Ï ¸¹ÀÌ ¹Ì²ô·¯Áü
-	Combine :  ´ÙÀ½ ¸¶Âû·ÂÀ» °è»êÇÏ´Â ¹æ½Ä 
+Friction : ë§ˆì°°ë ¥, ë‚®ì„ìˆ˜ë¡ ë§Žì´ ë¯¸ë„ëŸ¬ì§
+	Combine :  ë‹¤ìŒ ë§ˆì°°ë ¥ì„ ê³„ì‚°í•˜ëŠ” ë°©ì‹ 
 
-¿ÀºêÁ§Æ®ÀÇ ÀçÁúÁ¢±ÙÀº MeshRendererÀ» ÅëÇØ¼­ ÇÑ´Ù
-
-
+ì˜¤ë¸Œì íŠ¸ì˜ ìž¬ì§ˆì ‘ê·¼ì€ MeshRendererì„ í†µí•´ì„œ í•œë‹¤
 
 
-¹°Ã¼ ÇÊ¼ö ¿ä¼Ò :Mesh, Material, Collider, RigidBody
 
 
-c# Velocity :ÇöÀçÀÌµ¿¼Óµµ
+ë¬¼ì²´ í•„ìˆ˜ ìš”ì†Œ :Mesh, Material, Collider, RigidBody
 
-c# Rigid °ü·Ã ÇÔ¼ö´Â FixedUpdated¿¡ ÀÛ¼ºÇÏµµ·Ï ±ÇÀåµÈ´Ù
 
-c# AddForce(Vec) : VecÀÇ ¹æÇâ°ú Å©±â·Î ÈûÀ» ÁÜ , MessÀÇ ¹«°ÔÀÇ ¿µÇâÀ» ¹Þ´Â´Ù
-c# rigid.AddTorque: È¸Àü·Â
+c# Velocity :í˜„ìž¬ì´ë™ì†ë„
+
+c# Rigid ê´€ë ¨ í•¨ìˆ˜ëŠ” FixedUpdatedì— ìž‘ì„±í•˜ë„ë¡ ê¶Œìž¥ëœë‹¤
+
+c# AddForce(Vec) : Vecì˜ ë°©í–¥ê³¼ í¬ê¸°ë¡œ íž˜ì„ ì¤Œ , Messì˜ ë¬´ê²Œì˜ ì˜í–¥ì„ ë°›ëŠ”ë‹¤
+c# rigid.AddTorque: íšŒì „ë ¥
 
 c#
-//½ÇÁ¦ ¹°¸®ÀûÀÎ Ãæµ¹·Î ¹ß»ýÇÏ´Â ÀÌº¥Æ®
+//ì‹¤ì œ ë¬¼ë¦¬ì ì¸ ì¶©ëŒë¡œ ë°œìƒí•˜ëŠ” ì´ë²¤íŠ¸
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Sphere")
@@ -51,11 +51,11 @@ c#
             mat.color = new Color(1, 0, 0);
 //
 
- UI ->Canvas : UI°¡ ±×·ÁÁö´Â µµÈ­Áö ¿åÈ°ÀÎ ÄÄÆ÷³ÍÆ®
+ UI ->Canvas : UIê°€ ê·¸ë ¤ì§€ëŠ” ë„í™”ì§€ ìš•í™œì¸ ì»´í¬ë„ŒíŠ¸
 
     }
 
-    //ÄÝ¶óÀÌ´õ Ãæµ¹·Î ¹ß»ýÇÏ´Â ÀÌº¥Æ®
+    //ì½œë¼ì´ë” ì¶©ëŒë¡œ ë°œìƒí•˜ëŠ” ì´ë²¤íŠ¸
     private void OnTriggerEnter(Collider other)
     {
         
@@ -72,4 +72,11 @@ c#
 public void Jump()
     {
         rigid.AddForce(Vector3.up * 20, ForceMode.Impulse);
-    } //ÀÌ·¸°Ô ÇØ³õ°í ¾ÞÄ¿ ÂüÁ¶ÇÏ¸é ¹öÆ°°°Àº°Ô Á¢±Ù °¡´É
+    } //ì´ë ‡ê²Œ í•´ë†“ê³  ì•µì»¤ ì°¸ì¡°í•˜ë©´ ë²„íŠ¼ê°™ì€ê²Œ ì ‘ê·¼ ê°€ëŠ¥
+
+
+SetActive(bool) :ì˜¤ë¸Œì íŠ¸ í™œì„±í™” í•¨ìˆ˜ ex) gameObject.SetActive(false); //gameObject : ìžê¸°ìžì‹ 
+
+ì¹´ë©”ë¼ ì›€ì§ìž„ ê°™ì€ê²½ìš°ëŠ” LateUdate()ë¥¼ ì“°ëŠ”ê²Œ ì¼ë°˜ì 
+
+FindGameObjectWithTag() : ì£¼ì–´ì§„ íƒœê·¸ë¡œ ì˜¤ë¸Œì íŠ¸ ê²€ìƒ‰
