@@ -80,3 +80,5 @@ SetActive(bool) :오브젝트 활성화 함수 ex) gameObject.SetActive(false); 
 카메라 움직임 같은경우는 LateUdate()를 쓰는게 일반적
 
 FindGameObjectWithTag() : 주어진 태그로 오브젝트 검색
+
+using UnityEngine.SceneManagement; : Scene 넘길때 사용
