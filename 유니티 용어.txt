@@ -97,3 +97,10 @@ Order in Layer값이 높을수록 객체가 위에 얹어진다
 Edit -> Ptoject Setting -> Physics 2D-> Default Contact Offset : 충돌여백
 
 Spriter Editor : 스프라이트 정보를 편지할 수 있는 창
+
+Animator : 에니메이션을 관리하는 컴포넌트
+
+Key Frame : 애니메이션 값을 가진 프레임
+
+State : 애니메이션 상태를 관리하는 애니메이터 단위
+
