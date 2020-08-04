@@ -104,3 +104,7 @@ Key Frame : 애니메이션 값을 가진 프레임
 
 State : 애니메이션 상태를 관리하는 애니메이터 단위
 
+normalized : 벡터 크기를 1로 만든 상태 ( 단위 벡터)
+
+Freeze Rotation : 오브젝트 회전을 얼리는 옵션
+
